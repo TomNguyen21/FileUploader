@@ -9,13 +9,13 @@ let date = new Date();
 
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../public/uploads')
+    cb(null, './uploads')
   },
   filename: function (req, file, cb) {
     let extArray = file.mimetype.split("/");
     let extension = extArray[extArray.length - 1];
     console.log(file)
-    cb(null, file.originalname)
+    cb(null, file.fieldname + '.' + extension)
 
       // file.fieldname + '-' + date.getDate() + '0' + (date.getMonth() + 1) + date.getFullYear() + '.' +extension)
   }
