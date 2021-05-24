@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './FileUpload.css';
+import browseIcon from './browseIcon.png';
+import uploadIcon from './uploadIcon.png';
 
 function FileUpload() {
   const [fileData, setFileData] = useState("");
@@ -34,12 +36,12 @@ function FileUpload() {
           getFile(e);
           getFileName(e);
         }} required />
-        Choose File
+        Choose File <img className="browse_icon" src={browseIcon} alt="Browse" />
       </label>
       {fileName ? fileName : ""}
       <label className="file_input">
         <input type="submit" name= "upload" value= "Upload" />
-        Upload
+        Upload <img className="upload_icon" src={uploadIcon} alt="Upload" />
       </label>
       </div>
     </form>
