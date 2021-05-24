@@ -46,8 +46,10 @@ input[type="file"], input[type="submit"] {
 
 .browse_icon {
   height: 4vh;
+  max-width: 40px;
 }
 
 .upload_icon {
   height: 3vh;
+  max-width: 30px;
 }
