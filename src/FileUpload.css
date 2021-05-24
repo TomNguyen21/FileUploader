@@ -39,5 +39,9 @@ input {
 }
 
 input[type="file"], input[type="submit"] {
-  display: none;
+  position: absolute;
+  left: -99999rem;
+  font-size: 20px;
+  color: white;
+  /* left: 40em; */
 }
