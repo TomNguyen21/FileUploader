@@ -26,7 +26,10 @@ function UploadedFile() {
       >{Array.from(
         new Array(numPages),
         (el, index) => (
-          <Page key={`page_${index + 1}`} pageNumber={index + 1} style={{ margin: '10px 0' }} />
+          <Page
+            key={`page_${index + 1}`}
+            pageNumber={index + 1}
+          />
         ),
       )}
       </Document>
