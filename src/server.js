@@ -5,11 +5,13 @@ const app = express();
 app.use(cors());
 const PORT = 5000;
 
+app.use("/uploads", express.static("/uploads"));
+
 let date = new Date();
 
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads')
+    cb(null, '../public/uploads')
   },
   filename: function (req, file, cb) {
     let extArray = file.mimetype.split("/");
