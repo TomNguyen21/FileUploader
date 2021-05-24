@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #FFFFFF;
+  background-color: #1A1A1A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 }
 
 .pitch_deck_bg {
-  background: rgb(126, 126, 126);
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
   width: 100%;
   display: flex;
   align-items: center;
@@ -23,5 +23,4 @@
 
 .weFunder_logo {
   height: 20vh;
-  padding-bottom: 50px;
 }

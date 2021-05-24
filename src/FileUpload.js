@@ -23,8 +23,16 @@ function FileUpload() {
   }
   return (
     <form onSubmit={uploadFile}>
-      <input className="fileUpload_form" type="file" name="file" onChange={getFile} required />
-      <input type="submit" name= "upload" value= "Upload" />
+      <div className="file_inputs">
+      <label className="file_input">
+        <input type="file" name="file" onChange={getFile} required />
+        Choose File
+      </label>
+      <label className="file_input">
+        <input type="submit" name= "upload" value= "Upload" />
+        Upload
+      </label>
+      </div>
     </form>
   )
 }
