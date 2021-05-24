@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img className="weFunder_logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Wefunder_logo.png" alt="WeFunder" />
         <FileUpload />
-        <div className="pitch_deck_bg">
+        <div className="pitch_deck">
         <UploadedFile />
         </div>
       </header>
